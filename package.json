@@ -1,0 +1,19 @@
+{
+  "name": "imc-c6",
+  "version": "1.0.0",
+  "description": "Proyecto en WebPack y Babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/academia-geek/imc-c6.git"
+  },
+  "author": "Oscar Mesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/academia-geek/imc-c6/issues"
+  },
+  "homepage": "https://github.com/academia-geek/imc-c6#readme"
+}

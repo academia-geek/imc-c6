@@ -1,0 +1,16 @@
+/*
+@import url('bootstrap/dist/css/bootstrap.min.css');
+*/
+$backgroud-color: rgb(245, 245, 245);
+body {
+    background-color: $backgroud-color;
+}
+
+.container-fluid {
+    p {
+        color: red;
+    }
+    .card{
+        color : blue;
+    }
+}

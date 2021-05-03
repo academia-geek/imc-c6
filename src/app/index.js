@@ -1,6 +1,6 @@
 import Comentario from './Comentario'
 import 'bootstrap';
-import './style.css'
+import './sass/style.scss'
   
 let micomentario = new Comentario()
 

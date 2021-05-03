@@ -1,5 +1,6 @@
 import Comentario from './Comentario'
-
+import './style.css'
+  
 let micomentario = new Comentario()
 
 async function llamadoComentariosAsync () {

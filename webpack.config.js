@@ -1,30 +1,36 @@
-const path = require('path');
+const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-    
+
 module.exports = {
   entry: './src/app/index.js',
-  mode : 'development', 
-  devServer : {
+  mode: 'development',
+  devServer: {
     port: 9000,
-    open : true
-  }, 
+    open: true
+  },
   output: {
     filename: 'app.bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build')
   },
   plugins: [
     new HTMLWebpackPlugin({
-        template: './src/index.html', 
-        minify:  {
-            collapseWhitespace: true,
-            removeComments: true,
-            removeRedundantAttributes: true,
-            removeScriptTypeAttributes: true,
-            removeStyleLinkTypeAttributes: true,
-            useShortDoctype: true
-          }
-          
+      template: './src/index.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
     })
-  ]
-
-};
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  }
+}

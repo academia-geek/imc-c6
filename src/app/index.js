@@ -1,4 +1,5 @@
 import Comentario from './Comentario'
+import 'bootstrap';
 import './style.css'
   
 let micomentario = new Comentario()

@@ -1,6 +1,8 @@
 /*
 @import url('bootstrap/dist/css/bootstrap.min.css');
 */
+$primary: #90b2cf;
+@import "~bootstrap/scss/bootstrap";
 $backgroud-color: rgb(245, 245, 245);
 body {
     background-color: $backgroud-color;
@@ -8,9 +10,19 @@ body {
 
 .container-fluid {
     p {
-        color: red;
+        @if 1 > 2 {
+            color: red;
+        } @else {
+            color: invert(rgb(115, 255, 0), 50%);
+        }
     }
-    .card{
-        color : blue;
+    .card {
+        color: blue;
     }
 }
+
+
+@function invert($color, $amount) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
+  }

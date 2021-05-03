@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+
+$body-color: red;
+$font-color : rgb(199, 199, 199);
+body {
+  color: $body-color;
+  background-color: $font-color;
+}
